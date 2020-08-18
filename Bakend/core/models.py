@@ -23,9 +23,9 @@ class Enquiry(models.Model):
     email = models.EmailField()
     phone = models.PositiveIntegerField()
     state = models.CharField(max_length=100)
-    city = models.CharField()
+    city = models.CharField(max_length=100)
     pincode = models.PositiveIntegerField()
-    membership = models.CharField(blank=True, null=True)
+    membership = models.CharField(max_length=100, blank=True, null=True)
 
     subject = models.CharField(max_length=1000)
     message = models.TextField()
@@ -44,9 +44,9 @@ class Franchise(models.Model):
     email = models.EmailField()
     phone = models.PositiveIntegerField()
     state = models.CharField(max_length=100)
-    city = models.CharField()
+    city = models.CharField(max_length=100)
     pincode = models.PositiveIntegerField()
-    membership = models.CharField(blank=True, null=True)
+    membership = models.CharField(max_length=100,blank=True, null=True)
 
     class Meta:
         ordering = ['datetime']
