@@ -32,6 +32,8 @@ class Enquiry(models.Model):
 
     class Meta:
         ordering = ['datetime']
+        verbose_name = 'Enquiry'
+        verbose_name_plural = 'Enquiries'
 
     def __str__(self):
         return str(self.name) + str(self.subject)
