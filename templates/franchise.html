@@ -1,0 +1,151 @@
+{% extends 'base.html'%}
+{% load static %}
+{% load widget_tweaks %}
+{% block static %}
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" />
+    <!-- Owl Theme Default CSS -->
+    <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}" />
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}" />
+    <!-- Owl Magnific CSS -->
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}" />
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="{% static 'css/animate.css' %}" />
+    <!-- Boxicons CSS -->
+    <link rel="stylesheet" href="{% static 'css/boxicons.min.css' %}" />
+    <!-- Flaticon CSS -->
+    <link rel="stylesheet" href="{% static 'css/flaticon.css' %}" />
+    <!-- Meanmenu CSS -->
+    <link rel="stylesheet" href="{% static 'css/meanmenu.css' %}" />
+    <!-- Nice Select CSS -->
+    <link rel="stylesheet" href="{% static 'css/nice-select.css' %}" />
+    <!-- Odometer CSS-->
+    <link rel="stylesheet" href="{% static 'css/odometer.css' %}" />
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="{% static 'img/favicon.png' %}" />
+{% endblock %}
+
+{% block title %}
+    <!-- Title -->
+    <title>CoviArmour | About</title>
+{% endblock %}
+
+{% block body %}
+
+    <!-- Start Page Title Area -->
+    <div class="page-title-area bg-1" style="max-height: 10rem;">
+      <div class="container">
+        <div class="page-title-content" style="margin-top: -2.3rem;">
+          <h2>Franchise</h2>
+          <ul>
+            <li>
+              <a href="index.html">
+                Home
+              </a>
+            </li>
+
+            <li class="active">Franchise</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- End Page Title Area -->
+
+    <!-- Start Sign Up Area -->
+    <section class="user-area-all-style sign-up-area ptb-100">
+      <div class="container">
+        <div class="section-title">
+          <h2>Franchise Form</h2>
+          <p>
+            Fill this for in order to own franchise.
+          </p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="contact-form-action">
+              <form method="post" >
+                {% csrf_token %}
+
+                <div class="row">
+                  <div class="col-md-12 col-sm-12">
+                    <div class="form-group" >
+
+                      {% render_field form.name_of_firm class="form-control" type="text" placeholder="Name of Firm" %}
+
+<!--                      <input-->
+<!--                        class="form-control"-->
+<!--                        type="text"-->
+<!--                        name="name"-->
+<!--                        placeholder="Name of Firm"-->
+<!--                      />-->
+                    </div>
+                  </div>
+
+                  <div class="col-md-12 col-sm-12">
+                    <div class="form-group">
+                      {% render_field form.name_of_contact_person class="form-control" type="text" placeholder="Name of Contact Person" %}
+                    </div>
+                  </div>
+
+                  <div class="col-md-12 col-sm-12">
+                    <div class="form-group">
+                    {% render_field form.email class="form-control" placeholder="Email" %}
+                    </div>
+                  </div>
+
+                  <div class="col-md-12 col-sm-12">
+                    <div class="form-group">
+                      {% render_field form.phone class="form-control" placeholder="Phone" %}
+                    </div>
+                  </div>
+
+                  <div class="col-md-6 col-sm-6">
+                    <div class="form-group">
+                      {% render_field form.state class="form-control" placeholder="State" %}
+                    </div>
+                  </div>
+
+                  <div class="col-md-6 col-sm-6">
+                    <div class="form-group">
+                      {% render_field form.city class="form-control" placeholder="City" %}
+                    </div>
+                  </div>
+
+                    <div class="col-md-6 col-sm-6">
+                    <div class="form-group">
+                      {% render_field form.pincode class="form-control" placeholder="Pincode" %}
+                    </div>
+                  </div>
+
+                  <div class="col-md-6 col-sm-6">
+                    <div class="form-group">
+                      {% render_field form.membership class="form-control" placeholder="Membership" %}
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <button class="default-btn btn-two" type="submit">
+                      Submit
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="sign-in-img"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Sign Up Area -->
+
+{% endblock %}

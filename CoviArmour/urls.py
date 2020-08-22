@@ -18,13 +18,11 @@ from django.urls import path, include
 from rest_framework.routers import DefaultRouter
 from rest_framework.routers import DefaultRouter
 from . import routers
-
-
+from core import views as coreviews
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include(routers.router.urls)),
-    # path('admin/', admin.site.urls),
-    # path('admin/', admin.site.urls),
+    path('', include('core.urls', namespace='core')),
 ]

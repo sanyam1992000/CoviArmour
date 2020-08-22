@@ -38,3 +38,6 @@ dj-database-url
 whitenoise==5.0.1
 psycopg2-binary
 django-cors-headers==3.2.1
+
+
+django-widget-tweaks

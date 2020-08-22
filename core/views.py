@@ -1,14 +1,55 @@
 from django.http.response import Http404
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from rest_framework.views import APIView
 from rest_framework import authentication, permissions, status, viewsets
-from . import serializers, models
+from . import serializers, models, forms
 from rest_framework.response import Response
 
+def home(request):
+    return render(request, 'home.html')
 
+def about(request):
+    return render(request, 'about.html')
 
-# Create your views here.
+def contact(request):
+    if request.method == 'POST':
+        form = forms.ContactUsForm(request.POST)
+        if form.is_valid():
+            form.save()
+            # name = request.POST['name']
+            # email = request.POST['email']
+            # phoneno = request.POST['phoneno']
+            # query = request.POST['query']
+            # contact_us = models.ContactUs(name=name, email=email, phoneno=phoneno, query=query)
+            # contact_us.save()
 
+            # subject = 'New Query on Website from {}'.format(name)
+            # message = '\n \n Career and Counselling Cell Website received a new query from {} \n \nMessage,\n' \
+            #           '     {} \n \nFrom: \n{} \nPhone no. - {}'.format(name, query, email, phoneno)
+            # from_email = settings.DEFAULT_FROM_EMAIL
+            # to_email = ['careerandcounsellingcell.ymca@gmail.com', ]
+            # send_mail(subject=subject, message=message, from_email=from_email, recipient_list=to_email, fail_silently=True)
+
+            # messages.success(request, 'We will Contact you soon!')
+            return redirect('core:home')
+        # else:
+        #     messages.error(request, 'invalid input')
+    else:
+        form = forms.ContactUsForm()
+    return render(request, 'contact.html', {'form': form})
+
+def franchise(request):
+    if request.method == 'POST':
+        form = forms.FranchiseForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('core:home')
+    else:
+        form = forms.FranchiseForm()
+    return render(request, 'franchise.html', {'form': form})
+
+def services(request):
+    return render(request, 'services.html')
 
 class ContactUsAPIView(APIView):
     permission_classes = [permissions.AllowAny]

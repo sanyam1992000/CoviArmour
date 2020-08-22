@@ -1,0 +1,392 @@
+{% extends 'base.html'%}
+{% load widget_tweaks %}
+{% load static %}
+{% block static %}
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" />
+    <!-- Owl Theme Default CSS -->
+    <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}" />
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}" />
+    <!-- Owl Magnific CSS -->
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}" />
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="{% static 'css/animate.css' %}" />
+    <!-- Boxicons CSS -->
+    <link rel="stylesheet" href="{% static 'css/boxicons.min.css' %}" />
+    <!-- Flaticon CSS -->
+    <link rel="stylesheet" href="{% static 'css/flaticon.css' %}" />
+    <!-- Meanmenu CSS -->
+    <link rel="stylesheet" href="{% static 'css/meanmenu.css' %}" />
+    <!-- Nice Select CSS -->
+    <link rel="stylesheet" href="{% static 'css/nice-select.css' %}" />
+    <!-- Odometer CSS-->
+    <link rel="stylesheet" href="{% static 'css/odometer.css' %}" />
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="{% static 'img/favicon.png' %}" />
+{% endblock %}
+
+{% block title %}
+    <!-- Title -->
+    <title>CoviArmour | About</title>
+{% endblock %}
+
+{% block body %}
+
+    <!-- Start Page Title Area -->
+    <div class="page-title-area bg-1" style="max-height: 10rem;">
+      <div class="container">
+        <div class="page-title-content" style="margin-top: -2.3rem;">
+          <h2>Contact</h2>
+          <ul>
+            <li>
+              <a href="index.html">
+                Home
+              </a>
+            </li>
+
+            <li class="active">Contact</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- End Page Title Area -->
+
+    <!-- Start Sign Up Area -->
+    <section class="user-area-all-style sign-up-area ptb-100">
+      <div class="container">
+        <div class="section-title">
+          <h2>Quotations Form</h2>
+          <p>
+            Fill this for in order to know the price estimation for your need.
+          </p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="contact-form-action">
+              <form method="post">
+
+                <div class="row">
+                  <div class="col-md-6 col-sm-6">
+                    <div class="form-group">
+                      <input
+                        class="form-control"
+                        type="text"
+                        name="name"
+                        placeholder="Name of Firm"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="col-md-6 col-sm-6">
+                    <div class="form-group">
+                      <input
+                        class="form-control"
+                        type="text"
+                        name="name"
+                        placeholder="Name Of Contact Person"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="col-md-6 col-sm-6">
+                    <div class="form-group">
+                      <input
+                        class="form-control"
+                        type="text"
+                        name="name"
+                        placeholder="Phone No"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="col-md-6 col-sm-6">
+                    <div class="form-group">
+                      <input
+                        class="form-control"
+                        type="email"
+                        name="email"
+                        placeholder="Email Address"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-sm-4">
+                    <div class="form-group">
+                      <input
+                        class="form-control"
+                        type="text"
+                        name="state"
+                        placeholder="State"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-sm-4">
+                    <div class="form-group">
+                      <input
+                        class="form-control"
+                        type="text"
+                        name="city"
+                        placeholder="city"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-sm-4">
+                    <div class="form-group">
+                      <input
+                        class="form-control"
+                        type="text"
+                        name="pincode"
+                        placeholder="pincode"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="col-md-12 col-sm-12">
+                    <div class="form-group">
+                      <input
+                        class="form-control"
+                        type="text"
+                        name="subject"
+                        placeholder="Subject"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="col-md-12 col-sm-12">
+                    <div class="form-group">
+                      <input
+                        class="form-control"
+                        type="text"
+                        name="message"
+                        placeholder="Message"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <button class="default-btn btn-two" type="submit">
+                      Submit
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+<!--          <div class="col-lg-6">-->
+<!--            <div class="sign-in-img"></div>-->
+<!--          </div>-->
+        </div>
+      </div>
+    </section>
+    <!-- End Sign Up Area -->
+
+    <!-- Start Contact Area -->
+    <section class="contact-area ptb-100">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="contact-wrap">
+              <div class="contact-form">
+                <div class="section-title">
+                  <h2>Drop Us A Message For Any Query</h2>
+                </div>
+
+                <form id="contactForm" method="post">
+                {% csrf_token %}
+<!--                    {{ form }}-->
+<!--                    <button type="submit">-->
+<!--                        Send Message-->
+<!--                    </button>-->
+                  <div class="row">
+                    <div class="col-lg-6 col-sm-6">
+                      <div class="form-group">
+                        {% render_field form.name type="text" name="name" id="name" class="form-control" data-error="Please enter your name" placeholder="Your Name" %}
+<!--                        <input-->
+<!--                          type="text"-->
+<!--                          name="name"-->
+<!--                          id="name"-->
+<!--                          class="form-control"-->
+<!--                          required-->
+<!--                          data-error="Please enter your name"-->
+<!--                          placeholder="Your Name"-->
+<!--                        />-->
+                        <div class="help-block with-errors"></div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-6 col-sm-6">
+                      <div class="form-group">
+                      {% render_field form.email type="email" name="email" id="email" class="form-control" data-error="Please enter your email" placeholder="Your Email" %}
+
+<!--                        <input-->
+<!--                          type="email"-->
+<!--                          name="email"-->
+<!--                          id="email"-->
+<!--                          class="form-control"-->
+<!--                          required-->
+<!--                          data-error="Please enter your email"-->
+<!--                          placeholder="Your Email"-->
+<!--                        />-->
+                        <div class="help-block with-errors"></div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-6 col-sm-6">
+                      <div class="form-group">
+                      {% render_field form.phone type="number" name="phone" id="phone_number" data-error="Please enter your number" class="form-control" placeholder="Your Phone" %}
+
+<!--                        <input-->
+<!--                          type="text"-->
+<!--                          name="phone_number"-->
+<!--                          id="phone_number"-->
+<!--                          required-->
+<!--                          data-error="Please enter your number"-->
+<!--                          class="form-control"-->
+<!--                          placeholder="Your Phone"-->
+<!--                        />-->
+                        <div class="help-block with-errors"></div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-6 col-sm-6">
+                      <div class="form-group">
+                        {% render_field form.subject type="text" name="msg_subject" id="msg_subject" class="form-control" data-error="Please enter your subject" placeholder="Your Subject" %}
+
+<!--                        <input-->
+<!--                          type="text"-->
+<!--                          name="msg_subject"-->
+<!--                          id="msg_subject"-->
+<!--                          class="form-control"-->
+<!--                          required-->
+<!--                          data-error="Please enter your subject"-->
+<!--                          placeholder="Your Subject"-->
+<!--                        />-->
+                        <div class="help-block with-errors"></div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-12 col-md-12">
+                      <div class="form-group">
+                        {% render_field form.message name="message" class="form-control" id="message" cols="30" rows="5" data-error="Write your message" placeholder="Your Message" %}
+
+<!--                        <textarea-->
+<!--                          name="message"-->
+<!--                          class="form-control"-->
+<!--                          id="message"-->
+<!--                          cols="30"-->
+<!--                          rows="5"-->
+<!--                          required-->
+<!--                          data-error="Write your message"-->
+<!--                          placeholder="Your Message"-->
+<!--                        ></textarea>-->
+                        <div class="help-block with-errors"></div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-12 col-md-12">
+                      <button type="submit" class="default-btn page-btn">
+                        Send Message
+                      </button>
+                      <div id="msgSubmit" class="h3 text-center hidden"></div>
+                      <div class="clearfix"></div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="quick-contact">
+              <h3>Quick Contact</h3>
+
+              <ul>
+                <li>
+                  <i class="bx bx-location-plus"></i>
+                  Location:
+                  <span>A-100, Sector 65, Noida, 201301</span>
+                </li>
+
+                <li>
+                  <i class="bx bx-phone-call"></i>
+                  Call Us:
+                  <a href="tel:+61-821-456"
+                    >+61-821-456 <br />
+                    +61-987-786</a
+                  >
+                </li>
+
+                <li>
+                  <i class="bx bx-envelope"></i>
+                  Email Us:
+                  <a href="mailto:info@coviarmour.com">info@coviarmour.com </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Contact Area -->
+
+    <!-- Start Map Area -->
+    <div class="single-contact-map pb-100">
+      <div class="container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.630356438125!2d77.3806493649228!3d28.610864032426377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ceff2a424bad1%3A0x7c0b2144b043c1e2!2sNysa%20Communications%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1597860333052!5m2!1sen!2sin"
+          width="600"
+          height="450"
+          frameborder="0"
+          style="border: 0;"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
+        ></iframe>
+      </div>
+    </div>
+    <!-- End Map Area -->
+{% endblock %}
+
+
+{% block scripts %}
+    <!-- Jquery-3.5.1.Slim.Min.JS -->
+    <script src="{% static 'js/jquery-3.5.1.slim.min.js' %}"></script>
+    <!-- Popper JS -->
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <!-- Bootstrap JS -->
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <!-- Meanmenu JS -->
+    <script src="{% static 'js/jquery.meanmenu.js' %}"></script>
+    <!-- Wow JS -->
+    <script src="{% static 'js/wow.min.js' %}"></script>
+    <!-- Owl Carousel JS -->
+    <script src="{% static 'js/owl.carousel.js' %}"></script>
+    <!-- Owl Magnific JS -->
+    <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+    <!-- Nice Select JS -->
+    <script src="{% static 'js/jquery.nice-select.min.js' %}"></script>
+    <!-- Parallax JS -->
+    <script src="{% static 'js/parallax.min.js' %}"></script>
+    <!-- Appear JS -->
+    <script src="{% static 'js/jquery.appear.js' %}"></script>
+    <!-- Odometer JS -->
+    <script src="{% static 'js/odometer.min.js' %}"></script>
+    <!-- Odometer JS -->
+    <script src="{% static 'js/bootstrap-datepicker.min.js' %}"></script>
+    <!-- Form Validator JS -->
+    <script src="{% static 'js/form-validator.min.js' %}"></script>
+    <!-- Contact JS -->
+    <script src="{% static 'js/contact-form-script.js' %}"></script>
+    <!-- Ajaxchimp JS -->
+    <script src="{% static 'js/jquery.ajaxchimp.min.js' %}"></script>
+    <!-- Custom JS -->
+    <script src="{% static 'js/custom.js' %}"></script>
+
+  {% endblock %}
