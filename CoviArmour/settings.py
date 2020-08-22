@@ -25,7 +25,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'lgaq_lus76g@)npktfy6gpz@74jk9*7*c9@lda^c6ur@2cx5tk'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -164,5 +164,15 @@ ADMINS = (
     ('Sanyam', 'sanyam30dav@gmail.com'),
 )
 MANAGERS = ADMINS
+
+
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'careerandcounsellingcell.ymca@gmail.com'
+EMAIL_HOST_PASSWORD = 'opotfpjlylyenpgx'
+
+EMAIL_USE_TLS = True
+EMAIL_USE_SSL = False
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
 django_heroku.settings(locals())

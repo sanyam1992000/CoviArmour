@@ -2,7 +2,10 @@ from django.http.response import Http404
 from django.shortcuts import render, redirect
 from rest_framework.views import APIView
 from rest_framework import authentication, permissions, status, viewsets
-from . import serializers, models, forms
+from django.core.mail import send_mail, EmailMessage
+
+from django.conf import settings
+from . import serializers, models, forms, tasks
 from rest_framework.response import Response
 
 def home(request):
@@ -17,15 +20,22 @@ def contact(request):
         form1 = forms.EnquiryForm(request.POST)
         if form.is_valid():
             form.save()
-            # subject = 'New Query on Website from {}'.format(name)
-            # message = '\n \n Career and Counselling Cell Website received a new query from {} \n \nMessage,\n' \
-            #           '     {} \n \nFrom: \n{} \nPhone no. - {}'.format(name, query, email, phoneno)
-            # from_email = settings.DEFAULT_FROM_EMAIL
-            # to_email = ['careerandcounsellingcell.ymca@gmail.com', ]
-            # send_mail(subject=subject, message=message, from_email=from_email, recipient_list=to_email, fail_silently=True)
+            name = request.POST['name']
+            email = request.POST['email']
+            phone = request.POST['phone']
+            subject = request.POST['subject']
+            message = request.POST['message']
+
+            subject = 'New Query on Website for CoviArmour'
+            message = 'Dear {}, \nWe received a query from your behalf,\n Subject : {}\n \nMessage : {}\nWe will contact you on {}'.format(name, subject, message, phone)
+            from_email = settings.DEFAULT_FROM_EMAIL
+            to_email = ['sanyam30dav@gmail.com', str(email)]
+            tasks.send_email(subject, message, from_email, to_email)
+            print("###################################")
 
             # messages.success(request, 'We will Contact you soon!')
-            return redirect('core:home')
+            return redirect('core:contact')
+
         if form1.is_valid():
             form1.save()
             return redirect('core:home')
@@ -159,9 +169,9 @@ class FranchiseViewSet(viewsets.ModelViewSet):
     permission_classes = [permissions.AllowAny]
 
 
-# def handler404(request, exception):
-#     return render(request, '404.html', status=404)
-#
+def handler404(request, exception):
+    return render(request, '404.html', status=404)
+
 #
 # def handler500(request):
 #     return render(request, '500.html', status=500)
