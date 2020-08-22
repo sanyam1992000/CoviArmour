@@ -14,15 +14,9 @@ def about(request):
 def contact(request):
     if request.method == 'POST':
         form = forms.ContactUsForm(request.POST)
+        form1 = forms.EnquiryForm(request.POST)
         if form.is_valid():
             form.save()
-            # name = request.POST['name']
-            # email = request.POST['email']
-            # phoneno = request.POST['phoneno']
-            # query = request.POST['query']
-            # contact_us = models.ContactUs(name=name, email=email, phoneno=phoneno, query=query)
-            # contact_us.save()
-
             # subject = 'New Query on Website from {}'.format(name)
             # message = '\n \n Career and Counselling Cell Website received a new query from {} \n \nMessage,\n' \
             #           '     {} \n \nFrom: \n{} \nPhone no. - {}'.format(name, query, email, phoneno)
@@ -32,11 +26,20 @@ def contact(request):
 
             # messages.success(request, 'We will Contact you soon!')
             return redirect('core:home')
+        if form1.is_valid():
+            form1.save()
+            return redirect('core:home')
+
         # else:
         #     messages.error(request, 'invalid input')
     else:
         form = forms.ContactUsForm()
-    return render(request, 'contact.html', {'form': form})
+        form1 = forms.EnquiryForm()
+    context = {
+        'form': form,
+        'form1': form1
+    }
+    return render(request, 'contact.html', context=context)
 
 def franchise(request):
     if request.method == 'POST':

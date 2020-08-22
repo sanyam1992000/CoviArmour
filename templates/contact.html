@@ -71,101 +71,72 @@
           <div class="col-lg-12">
             <div class="contact-form-action">
               <form method="post">
-
+                {% csrf_token %}
                 <div class="row">
+
                   <div class="col-md-6 col-sm-6">
                     <div class="form-group">
-                      <input
-                        class="form-control"
-                        type="text"
-                        name="name"
-                        placeholder="Name of Firm"
-                      />
+                        {% render_field form1.type class="form-control" placeholder="Type" %}
+                    </div>
+                  </div>
+
+                    <div class="col-md-6 col-sm-6">
+                    <div class="form-group">
+                        {% render_field form1.name class="form-control" placeholder="Your Name" %}
                     </div>
                   </div>
 
                   <div class="col-md-6 col-sm-6">
                     <div class="form-group">
-                      <input
-                        class="form-control"
-                        type="text"
-                        name="name"
-                        placeholder="Name Of Contact Person"
-                      />
+                        {% render_field form1.phone class="form-control" placeholder="Your Phone No." %}
                     </div>
                   </div>
 
                   <div class="col-md-6 col-sm-6">
                     <div class="form-group">
-                      <input
-                        class="form-control"
-                        type="text"
-                        name="name"
-                        placeholder="Phone No"
-                      />
+                        {% render_field form1.email class="form-control" placeholder="Your Email" %}
+                    </div>
+                  </div>
+
+                  <div class="col-md-4 col-sm-4">
+                    <div class="form-group">
+                        {% render_field form1.address class="form-control" placeholder="Your Address" %}
+                    </div>
+                  </div>
+
+                  <div class="col-md-4 col-sm-4">
+                    <div class="form-group">
+                        {% render_field form1.state class="form-control" placeholder="Your State" %}
+                    </div>
+                  </div>
+
+                  <div class="col-md-4 col-sm-4">
+                    <div class="form-group">
+                        {% render_field form1.city class="form-control" placeholder="Your City" %}
                     </div>
                   </div>
 
                   <div class="col-md-6 col-sm-6">
                     <div class="form-group">
-                      <input
-                        class="form-control"
-                        type="email"
-                        name="email"
-                        placeholder="Email Address"
-                      />
+                        {% render_field form1.pincode class="form-control" placeholder="Your Pincode" %}
                     </div>
                   </div>
-                  <div class="col-md-4 col-sm-4">
+
+                  <div class="col-md-6 col-sm-6">
                     <div class="form-group">
-                      <input
-                        class="form-control"
-                        type="text"
-                        name="state"
-                        placeholder="State"
-                      />
+                        {% render_field form1.membership class="form-control" placeholder="Membership" %}
                     </div>
                   </div>
-                  <div class="col-md-4 col-sm-4">
+                    <br/>
+                  <div class="col-md-12 col-sm-12">
                     <div class="form-group">
-                      <input
-                        class="form-control"
-                        type="text"
-                        name="city"
-                        placeholder="city"
-                      />
-                    </div>
-                  </div>
-                  <div class="col-md-4 col-sm-4">
-                    <div class="form-group">
-                      <input
-                        class="form-control"
-                        type="text"
-                        name="pincode"
-                        placeholder="pincode"
-                      />
+                        {% render_field form1.subject class="form-control" placeholder="Subject" %}
                     </div>
                   </div>
 
                   <div class="col-md-12 col-sm-12">
                     <div class="form-group">
-                      <input
-                        class="form-control"
-                        type="text"
-                        name="subject"
-                        placeholder="Subject"
-                      />
-                    </div>
-                  </div>
-
-                  <div class="col-md-12 col-sm-12">
-                    <div class="form-group">
-                      <input
-                        class="form-control"
-                        type="text"
-                        name="message"
-                        placeholder="Message"
-                      />
+                        {% render_field form1.message class="form-control" placeholder="Message" %}
                     </div>
                   </div>
 
@@ -198,7 +169,7 @@
                   <h2>Drop Us A Message For Any Query</h2>
                 </div>
 
-                <form id="contactForm" method="post">
+                <form id="" method="post">
                 {% csrf_token %}
 <!--                    {{ form }}-->
 <!--                    <button type="submit">-->

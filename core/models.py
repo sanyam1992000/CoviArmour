@@ -7,13 +7,19 @@ membership = (
     ('Platinum', 'Platinum'),
 )
 
+type_of_firm = (
+    ('Individual', 'Individual'),
+    ('Private Firm', 'Private'),
+    ('Government Firm', 'Government'),
+)
+
 
 class ContactUs(models.Model):
     datetime = models.DateTimeField(auto_now_add=True)
-    name = models.CharField(max_length=1000, blank=True, null=True)
+    name = models.CharField(max_length=1000, default=None)
     email = models.EmailField(blank=True, null=True)
     phone = models.PositiveIntegerField()
-    subject = models.CharField(max_length=1000, blank=True, null=True)
+    subject = models.CharField(max_length=1000, default=None)
     message = models.TextField()
 
     class Meta:
@@ -27,16 +33,18 @@ class ContactUs(models.Model):
 
 class Enquiry(models.Model):
     datetime = models.DateTimeField(auto_now_add=True)
-    name = models.CharField(max_length=1000)
-    email = models.EmailField()
+    type = models.CharField(choices=type_of_firm, default='Private' , max_length=100)
+    name = models.CharField(max_length=100)
+    email = models.EmailField(blank=True, null=True)
     phone = models.BigIntegerField()
-    state = models.CharField(max_length=100)
-    city = models.CharField(max_length=100)
+    address = models.CharField(max_length=1000, blank=True, null=True)
+    state = models.CharField(max_length=100, blank=True, null=True)
+    city = models.CharField(max_length=100, blank=True, null=True)
     pincode = models.PositiveIntegerField()
-    membership = models.CharField(max_length=100, blank=True, null=True)
+    membership = models.CharField(choices=membership, default='Silver', max_length=100, blank=True, null=True)
 
-    subject = models.CharField(max_length=1000)
-    message = models.TextField()
+    subject = models.CharField(max_length=1000, blank=True, null=True)
+    message = models.TextField(blank=True, null=True)
 
     class Meta:
         ordering = ['datetime']
@@ -49,14 +57,16 @@ class Enquiry(models.Model):
 
 class Franchise(models.Model):
     datetime = models.DateTimeField(auto_now_add=True)
-    name_of_firm = models.CharField(max_length=1000, blank=True, null=True)
-    name_of_contact_person = models.CharField(max_length=1000, blank=True, null=True)
+    name_of_firm = models.CharField(max_length=1000, default=None)
+    name_of_contact_person = models.CharField(max_length=1000, default=None)
     email = models.EmailField(blank=True, null=True)
-    phone = models.BigIntegerField(blank=True, null=True)
+    phone = models.BigIntegerField(default=None)
+
+    address = models.CharField(max_length=1000, blank=True, null=True)
     state = models.CharField(max_length=100, blank=True, null=True)
     city = models.CharField(max_length=100, blank=True, null=True)
     pincode = models.PositiveIntegerField(blank=True, null=True)
-    membership = models.CharField(choices=membership, max_length=100, blank=True, null=True)
+    membership = models.CharField(choices=membership, max_length=100, default='Silver')
 
     class Meta:
         ordering = ['datetime']

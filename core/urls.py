@@ -8,7 +8,7 @@ urlpatterns = [
     path('technology/', coreviews.about, name='technology'),
     path('services/', coreviews.services, name='services'),
     path('franchise/', coreviews.franchise, name='franchise'),
-    path('certification/', coreviews.about, name='certification'),
+    path('certifications/', coreviews.about, name='certifications'),
     path('contact/', coreviews.contact, name='contact'),
 ]
 
