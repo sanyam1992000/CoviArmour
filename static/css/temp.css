@@ -55,6 +55,12 @@
 .container_img {
   width: 100%;
 }
+.benifits-img {
+  height: 22.8rem;
+}
+.benifits-img1 {
+  height: 22.5rem;
+}
 @media only screen and (max-width: 600px) {
   .mob-hide {
     display: none;

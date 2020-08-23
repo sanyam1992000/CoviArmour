@@ -64,6 +64,12 @@ def franchise(request):
 def services(request):
     return render(request, 'services.html')
 
+def certification(request):
+    return render(request, 'certification.html')
+
+def technology(request):
+    return render(request, 'technology.html')
+
 class ContactUsAPIView(APIView):
     permission_classes = [permissions.AllowAny]
 

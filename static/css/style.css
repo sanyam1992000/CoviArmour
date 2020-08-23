@@ -1033,6 +1033,7 @@ About Area Style
 }
 .about-img-1 {
   height: 30rem;
+  widows: 30rem;
 }
 
 /*
@@ -1209,6 +1210,24 @@ Prevent Area Style
 /*
 Process Area Style
 ======================================================*/
+.single-process2 {
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 30px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+}
+
+.single-process2 img {
+  width: 20rem;
+  height: 30rem;
+}
 .single-process {
   text-align: center;
   padding: 30px;
@@ -1222,10 +1241,23 @@ Process Area Style
   box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
   border-radius: 4px;
 }
-
+@media only screen and (max-width: 600px) {
+  .single-process {
+    text-align: center;
+    padding: 30px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 30px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    background-color: #ffffff;
+    -webkit-box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+  }
+}
 .single-process img {
-  max-width: 70px;
-  margin-bottom: 22px;
+  height: 70px;
 }
 
 .single-process h3 {

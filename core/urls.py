@@ -5,10 +5,10 @@ app_name = 'core'
 urlpatterns = [
     path('', coreviews.home, name='home'),
     path('about/', coreviews.about, name='about'),
-    path('technology/', coreviews.about, name='technology'),
+    path('technology/', coreviews.technology, name='technology'),
     path('services/', coreviews.services, name='services'),
     path('franchise/', coreviews.franchise, name='franchise'),
-    path('certifications/', coreviews.about, name='certifications'),
+    path('certifications/', coreviews.certification, name='certifications'),
     path('contact/', coreviews.contact, name='contact'),
 ]
 
