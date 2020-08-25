@@ -1,7 +1,7 @@
 from django.db import models
 
 # Create your models here.
-membership = (
+membership_choices = (
     ('Silver', 'Silver'),
     ('Gold', 'Gold'),
     ('Platinum', 'Platinum'),
@@ -33,7 +33,7 @@ class ContactUs(models.Model):
 
 class Enquiry(models.Model):
     datetime = models.DateTimeField(auto_now_add=True)
-    type = models.CharField(choices=type_of_firm, default='Private' , max_length=100)
+    type = models.CharField(choices=type_of_firm, max_length=100)
     name = models.CharField(max_length=100)
     email = models.EmailField(blank=True, null=True)
     phone = models.BigIntegerField()
@@ -41,7 +41,7 @@ class Enquiry(models.Model):
     state = models.CharField(max_length=100, blank=True, null=True)
     city = models.CharField(max_length=100, blank=True, null=True)
     pincode = models.PositiveIntegerField()
-    membership = models.CharField(choices=membership, default='Silver', max_length=100, blank=True, null=True)
+    membership = models.CharField(choices=membership_choices, max_length=100)
 
     subject = models.CharField(max_length=1000, blank=True, null=True)
     message = models.TextField(blank=True, null=True)
@@ -66,7 +66,7 @@ class Franchise(models.Model):
     state = models.CharField(max_length=100, blank=True, null=True)
     city = models.CharField(max_length=100, blank=True, null=True)
     pincode = models.PositiveIntegerField(blank=True, null=True)
-    membership = models.CharField(choices=membership, max_length=100, default='Silver')
+    membership = models.CharField(choices=membership_choices, max_length=100, default='Silver')
 
     class Meta:
         ordering = ['datetime']
