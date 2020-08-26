@@ -1,144 +1,155 @@
 {% load static %}
+<header class="header-area fixed-top">
+  <div class="top-header-area">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 col-sm-6">
+          <ul class="header-content-left">
+            <li>
+              <a href="mailto:info@coviarmour.com">
+                <i class="bx bx-envelope"></i>
+                Email: info@coviarmour.com
+              </a>
+            </li>
 
-    <!-- Start Heder Area -->
-    <header class="header-area fixed-top">
-      <div class="top-header-area">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-lg-6 col-sm-6">
-              <ul class="header-content-left">
-                <li>
-                  <a href="mailto:info@coviarmour.com">
-                    <i class="bx bx-envelope"></i>
-                    Email: info@coviarmour.com
+            <li>
+              <a href="tel:+917827969322">
+                <i class="bx bx-phone-call"></i>
+                Call Us: +91 782 796 9322
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!--            <div class="col-lg-6 col-sm-6">-->
+        <!--              <ul class="header-content-right">-->
+        <!--                <li>-->
+        <!--                  Opening Hour: 9:00 am - 9:00 pm-->
+        <!--                </li>-->
+        <!--                &lt;!&ndash;<li>-->
+        <!--                    <a href="sign-in.html">-->
+        <!--                      Sign In-->
+        <!--                    </a>-->
+        <!--                  </li>&ndash;&gt;-->
+        <!--              </ul>-->
+        <!--            </div>-->
+      </div>
+    </div>
+  </div>
+
+  <div class="icon-bar mob-hide">
+    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+    <!--        <a href="#" class="twitter"><i class="fa fa-instagram"></i></a>-->
+    <a href="mailto:info@coviarmour.com" class="google"
+      ><i class="fa fa-google"></i
+    ></a>
+    <a href="tel:+917827969322" class="linkedin"><i class="fa fa-phone"></i></a>
+  </div>
+
+  <!-- Start Navbar Area -->
+  <div class="nav-area">
+    <div class="navbar-area">
+      <!-- Menu For Mobile Device -->
+      <div class="mobile-nav">
+        <a href="{% url 'core:home' %}" class="logo">
+          <img
+            src="{% static 'img/logo4.png' %}"
+            alt="Logo"
+            style="height: 55px; !important;"
+          />
+        </a>
+      </div>
+
+      <!-- Menu For Desktop Device -->
+      <div class="main-nav">
+        <nav class="navbar navbar-expand-md">
+          <div class="container">
+            <a class="navbar-brand" href="{% url 'core:home' %}">
+              <img
+                src="{% static 'img/logo4.png' %} "
+                alt="Logo"
+                style="height: 80px; !important;"
+              />
+            </a>
+
+            <div class="collapse navbar-collapse mean-menu">
+              <ul class="navbar-nav m-auto">
+                <li class="nav-item">
+                  <a href="{% url 'core:home' %}" class="nav-link active">
+                    Home
                   </a>
                 </li>
 
-                <li>
-                  <a href="tel:+917827969322">
-                    <i class="bx bx-phone-call"></i>
-                    Call Us: +91 782 796 9322
+                <li class="nav-item">
+                  <a href="{% url 'core:about' %}" class="nav-link"
+                    >CoviArmour</a
+                  >
+                </li>
+
+                <!--                    <li class="nav-item">-->
+                <!--                      <a href="#" class="nav-link">-->
+                <!--                        Pages-->
+                <!--                        <i class="bx bx-chevron-right"></i>-->
+                <!--                      </a>-->
+
+                <!--                      <ul class="dropdown-menu">-->
+                <!--                        <li class="nav-item">-->
+                <!--                          <a href="about.html" class="nav-link">About</a>-->
+                <!--                        </li>-->
+
+                <!--                        <li class="nav-item">-->
+                <!--                          <a href="services.html" class="nav-link">Services</a>-->
+                <!--                        </li>-->
+
+                <!--                        <li class="nav-item">-->
+                <!--                          <a href="franchise.html" class="nav-link"-->
+                <!--                            >Franchise</a-->
+                <!--                          >-->
+                <!--                        </li>-->
+
+                <!--                        <li class="nav-item">-->
+                <!--                          <a href="certification.html" class="nav-link"-->
+                <!--                            >Certification</a-->
+                <!--                          >-->
+                <!--                        </li>-->
+
+                <!--                        <li class="nav-item">-->
+                <!--                          <a href="contact.html" class="nav-link">Contact</a>-->
+                <!--                        </li>-->
+                <!--                      </ul>-->
+                <!--                    </li>-->
+
+                <li class="nav-item">
+                  <a href="{% url 'core:technology' %}" class="nav-link">
+                    Technology
                   </a>
+                </li>
+
+                <li class="nav-item">
+                  <a href="{% url 'core:services' %}" class="nav-link">
+                    Services
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="{% url 'core:franchise' %}" class="nav-link">
+                    Franchise
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a href="{% url 'core:certifications' %}" class="nav-link">
+                    Certifications
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a href="{% url 'core:contact' %}" class="nav-link"
+                    >Contact</a
+                  >
                 </li>
               </ul>
-            </div>
 
-<!--            <div class="col-lg-6 col-sm-6">-->
-<!--              <ul class="header-content-right">-->
-<!--                <li>-->
-<!--                  Opening Hour: 9:00 am - 9:00 pm-->
-<!--                </li>-->
-<!--                &lt;!&ndash;<li>-->
-<!--                    <a href="sign-in.html">-->
-<!--                      Sign In-->
-<!--                    </a>-->
-<!--                  </li>&ndash;&gt;-->
-<!--              </ul>-->
-<!--            </div>-->
-          </div>
-        </div>
-      </div>
-
-      <div class="icon-bar mob-hide">
-<!--        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>-->
-<!--        <a href="#" class="twitter"><i class="fa fa-instagram"></i></a>-->
-        <a href="mailto:info@coviarmour.com" class="google"><i class="fa fa-google"></i></a>
-        <a href="tel:+917827969322" class="linkedin"><i class="fa fa-phone"></i></a>
-      </div>
-
-
-      <!-- Start Navbar Area -->
-      <div class="nav-area">
-        <div class="navbar-area">
-          <!-- Menu For Mobile Device -->
-          <div class="mobile-nav">
-            <a href="{% url 'core:home' %}" class="logo">
-              <img src="{% static 'img/logo.png' %}" alt="Logo" style="height: 55px; !important;" />
-            </a>
-          </div>
-
-          <!-- Menu For Desktop Device -->
-          <div class="main-nav">
-            <nav class="navbar navbar-expand-md">
-              <div class="container">
-                <a class="navbar-brand" href="{% url 'core:home' %}">
-                  <img src="{% static 'img/logo.png' %} " alt="Logo"  style="height: 80px; !important;" />
-                </a>
-
-                <div class="collapse navbar-collapse mean-menu">
-                  <ul class="navbar-nav m-auto">
-                    <li class="nav-item">
-                      <a href="{% url 'core:home' %}" class="nav-link active">
-                        Home
-                      </a>
-                    </li>
-
-                    <li class="nav-item">
-                      <a href="{% url 'core:about' %}" class="nav-link">CoviArmour</a>
-                    </li>
-
-<!--                    <li class="nav-item">-->
-<!--                      <a href="#" class="nav-link">-->
-<!--                        Pages-->
-<!--                        <i class="bx bx-chevron-right"></i>-->
-<!--                      </a>-->
-
-<!--                      <ul class="dropdown-menu">-->
-<!--                        <li class="nav-item">-->
-<!--                          <a href="about.html" class="nav-link">About</a>-->
-<!--                        </li>-->
-
-<!--                        <li class="nav-item">-->
-<!--                          <a href="services.html" class="nav-link">Services</a>-->
-<!--                        </li>-->
-
-<!--                        <li class="nav-item">-->
-<!--                          <a href="franchise.html" class="nav-link"-->
-<!--                            >Franchise</a-->
-<!--                          >-->
-<!--                        </li>-->
-
-<!--                        <li class="nav-item">-->
-<!--                          <a href="certification.html" class="nav-link"-->
-<!--                            >Certification</a-->
-<!--                          >-->
-<!--                        </li>-->
-
-<!--                        <li class="nav-item">-->
-<!--                          <a href="contact.html" class="nav-link">Contact</a>-->
-<!--                        </li>-->
-<!--                      </ul>-->
-<!--                    </li>-->
-
-                    <li class="nav-item">
-                      <a href="{% url 'core:technology' %}" class="nav-link">
-                        Technology
-                      </a>
-                    </li>
-
-                    <li class="nav-item">
-                      <a href="{% url 'core:services' %}" class="nav-link">
-                        Services
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="{% url 'core:franchise' %}" class="nav-link">
-                        Franchise
-                      </a>
-                    </li>
-
-                    <li class="nav-item">
-                      <a href="{% url 'core:certifications' %}" class="nav-link">
-                        Certifications
-                      </a>
-                    </li>
-
-                    <li class="nav-item">
-                      <a href="{% url 'core:contact' %}" class="nav-link">Contact</a>
-                    </li>
-                  </ul>
-
-                  <!-- Start Other Option
+              <!-- Start Other Option
 
             <div class="get-quote">
             <a href="#" class="default-btn">
@@ -147,12 +158,12 @@
             </div>
           </div>
            End Other Option -->
-                </div>
-              </div>
-            </nav>
+            </div>
           </div>
-        </div>
+        </nav>
       </div>
-      <!-- End Navbar Area -->
-    </header>
-    <!-- End Heder Area -->
+    </div>
+  </div>
+  <!-- End Navbar Area -->
+</header>
+<!-- End Heder Area -->

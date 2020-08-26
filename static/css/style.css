@@ -63,12 +63,12 @@ a {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   text-decoration: none;
-  color: #190f3c;
+  color: #2a6103;
 }
 
 a:hover {
   text-decoration: none;
-  color: #232350;
+  color: #2a6103;
 }
 
 a:focus {
@@ -99,7 +99,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #232350;
+  color: ; #2a6103
   font-weight: 700;
   font-family: 'Roboto', sans-serif;
   text-transform: capitalize;
@@ -141,7 +141,7 @@ ul {
 
 .form-control {
   height: 50px;
-  color: #232350;
+  color:  #2a6103;
   border: 1px solid #e8e8e8;
   background-color: #f2f9fc;
   border-radius: 4px;
@@ -172,7 +172,7 @@ ul {
   -webkit-box-shadow: unset;
   box-shadow: unset;
   outline: 0;
-  border: 1px solid #190f3c;
+  border: 1px solid #1d4401;
 }
 
 .form-control:hover:focus,
@@ -238,7 +238,7 @@ Default Btn Area Style*/
   text-align: center;
   overflow: hidden;
   z-index: 1;
-  background-color: #04b8e5;
+  background-color: #43a001;
 }
 
 .default-btn::before {
@@ -248,7 +248,7 @@ Default Btn Area Style*/
   left: 0%;
   width: 100%;
   height: 50%;
-  background-color: #04b8e5;
+  background-color: #43a001;
   z-index: -1;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -261,7 +261,7 @@ Default Btn Area Style*/
   right: 0%;
   width: 100%;
   height: 50%;
-  background-color: #04b8e5;
+  background-color: #43a001;
   z-index: -1;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -269,7 +269,7 @@ Default Btn Area Style*/
 
 .default-btn.active {
   margin-left: 20px;
-  color: #232350;
+  color: #2a6103;
   background-color: #ffffff;
 }
 
@@ -279,19 +279,19 @@ Default Btn Area Style*/
 
 .default-btn:hover::before {
   top: 0;
-  background-color: #190f3c;
+  background-color: #2a6103;
 }
 
 .default-btn:hover::after {
   bottom: 0;
-  background-color: #190f3c;
+  background-color: #2a6103;
 }
 
 /*
 Read More Area Style*/
 .read-more {
   line-height: 1;
-  color: #190f3c;
+  color:#2a6103;
   font-weight: 500;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -306,11 +306,11 @@ Read More Area Style*/
 }
 
 .read-more:hover {
-  color: #04b8e5;
+  color: #2a6103;
 }
 
 .read-more:hover i {
-  color: #04b8e5;
+  color: #2a6103;
   -webkit-animation: rotation 0.5s linear infinite;
   animation: rotation 0.5s linear infinite;
 }
@@ -334,7 +334,7 @@ Header Area Style
 
 .header-area .top-header-area {
   padding: 15px 0;
-  background-color: #190f3c;
+  background-color: #1c4200;
 }
 
 .header-area .top-header-area .header-content-left li {
@@ -424,11 +424,11 @@ Nav Area Style
 }
 
 .nav-area .navbar-area .main-nav nav .navbar-nav .nav-item a:hover {
-  color: #04b8e5;
+  color: #fce910;
 }
 
 .nav-area .navbar-area .main-nav nav .navbar-nav .nav-item a.active {
-  color: #04b8e5;
+  color: #fce910;
 }
 
 .nav-area .navbar-area .main-nav nav .navbar-nav .nav-item .dropdown-menu {
@@ -448,7 +448,7 @@ Nav Area Style
 
 .nav-area .navbar-area .main-nav nav .navbar-nav .nav-item .dropdown-menu li a {
   font-size: 13px;
-  color: #232350;
+  color: #fce910;
   position: relative;
   padding: 10px 15px;
   border-bottom: 1px dashed #eeeeee;
@@ -591,7 +591,7 @@ Nav Area Style
   right: 0;
   margin: auto;
   z-index: 999;
-  background-color: #232350;
+  background-color: #245500;
   -webkit-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.4);
   box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.4);
   -webkit-animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
@@ -607,7 +607,7 @@ Nav Area Style
   right: 0;
   margin: auto;
   z-index: 999;
-  background-color: #232350;
+  background-color: #245500;
   -webkit-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.4);
   box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.4);
   -webkit-animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
@@ -682,7 +682,7 @@ Hero Slider Area Style
   left: 0;
   width: 100%;
   height: 50%;
-  background-color: rgba(0, 55, 130, 0.5);
+  background-color:rgba(30, 94, 0, 0.5);
   z-index: -1;
 }
 
@@ -693,7 +693,7 @@ Hero Slider Area Style
   right: 0;
   width: 100%;
   height: 50%;
-  background-color: rgba(0, 55, 130, 0.5);
+  background-color: rgba(30, 94, 0, 0.5);
   z-index: -1;
 }
 
@@ -789,7 +789,7 @@ Hero Slider Area Style
 }
 
 .hero-slider-area .owl-prev i:hover {
-  border-color: #04b8e5;
+  border-color: #2a6103;
 }
 
 .hero-slider-area .owl-next i {
@@ -799,7 +799,7 @@ Hero Slider Area Style
 }
 
 .hero-slider-area .owl-next i:hover {
-  border-color: #04b8e5;
+  border-color: #2a6103;
 }
 
 .hero-slider-area .owl-next {
@@ -816,7 +816,7 @@ Hero Slider Area Style
 }
 
 .hero-slider-area .owl-next i {
-  background-color: #190f3c;
+  background-color: #2a6103;
   color: #ffffff;
   width: 40px;
   height: 40px;
@@ -829,7 +829,7 @@ Hero Slider Area Style
 }
 
 .hero-slider-area .owl-next i:hover {
-  background-color: #04b8e5 !important;
+  background-color: #2a6103 !important;
 }
 
 .hero-slider-area .owl-prev {
@@ -858,7 +858,7 @@ Hero Slider Area Style
 }
 
 .hero-slider-area .owl-prev i:hover {
-  background-color: #04b8e5 !important;
+  background-color: #2a6103 !important;
 }
 
 .hero-slider-area:hover .owl-prev {
@@ -894,7 +894,7 @@ Feature Area Style
 }
 
 .feature-area .feature-wrap {
-  background-color: #04b8e5;
+  background-color: #578635;
   border-radius: 10px;
 }
 
@@ -923,7 +923,7 @@ Feature Area Style
 
 .feature-area .hot-line {
   text-align: center;
-  background-color: #190f3c;
+  background-color: #fce910;
   padding: 20px;
   border-radius: 10px;
 }
@@ -948,7 +948,7 @@ Feature Area Style
 }
 
 .feature-area .hot-line a:hover {
-  color: #04b8e5;
+  color: #fce910;
 }
 
 /*
@@ -960,7 +960,7 @@ About Area Style
 }
 
 .about-content span {
-  color: #04b8e5;
+  color: #fce910;
   display: block;
   margin-bottom: 8px;
   font-weight: 600;
@@ -992,7 +992,7 @@ About Area Style
 }
 
 .about-content ul li i {
-  color: #04b8e5;
+  color: #76975f;
   position: absolute;
   top: -1px;
   left: 0;
@@ -1009,7 +1009,7 @@ About Area Style
 }
 
 .about-img {
-  border: 10px solid #232350;
+  border: 10px solid #578635;
   border-radius: 50%;
   position: relative;
 }
@@ -1018,7 +1018,7 @@ About Area Style
   position: absolute;
   bottom: 0;
   left: -20px;
-  border: 10px solid #232350;
+  border: 10px solid #578635;
   border-radius: 50%;
 }
 
@@ -1059,7 +1059,7 @@ Services Area Style
   left: 0;
   width: 100%;
   height: 0;
-  background-color: #190f3c;
+  background-color: #578635;
   z-index: -1;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -1093,7 +1093,7 @@ Services Area Style
   right: 30px;
   -webkit-box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
   box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
-  color: #232350;
+  color: #578635;
   width: 35px;
   height: 35px;
   line-height: 35px;
@@ -1123,11 +1123,11 @@ Services Area Style
 }
 
 .single-services:hover .services-content .read-more {
-  color: #04b8e5;
+  color: #578635;
 }
 
 .single-services:hover .services-content .read-more i {
-  color: #04b8e5;
+  color: #578635;
 }
 
 /*
@@ -1139,7 +1139,7 @@ Prevent Area Style
 }
 
 .prevent-content span {
-  color: #04b8e5;
+  color: #578635;
   display: block;
   margin-bottom: 8px;
   font-weight: 600;
@@ -1167,7 +1167,7 @@ Prevent Area Style
   left: 8px;
   width: 30px;
   height: 30px;
-  background-color: #04b8e5;
+  background-color: #578635;
 }
 
 .prevent-content ul li::after {
@@ -1177,12 +1177,12 @@ Prevent Area Style
   left: 0;
   width: 30px;
   height: 30px;
-  background-color: #bcf0fd;
+  background-color: #98e760;
   z-index: -1;
 }
 
 .prevent-img {
-  border: 10px solid #232350;
+  border: 10px solid #578635;
   border-radius: 50%;
   position: relative;
 }
@@ -1191,7 +1191,7 @@ Prevent Area Style
   position: absolute;
   bottom: 0;
   left: -20px;
-  border: 10px solid #232350;
+  border: 10px solid #578635;
   border-radius: 50%;
   -webkit-animation: rotation 30s linear infinite;
   animation: rotation 30s linear infinite;
@@ -1276,7 +1276,7 @@ Process Area Style
   height: 35px;
   line-height: 35px;
   text-align: center;
-  background-color: #04b8e5;
+  background-color: #76975f;
   border-radius: 50%;
   color: #ffffff;
   font-weight: 600;
@@ -1321,7 +1321,7 @@ Project Area Style
 }
 
 .project-area .owl-next i {
-  background-color: #190f3c;
+  background-color: #578635;
   color: #ffffff;
   width: 40px;
   height: 40px;
@@ -1334,7 +1334,7 @@ Project Area Style
 }
 
 .project-area .owl-next i:hover {
-  background-color: #04b8e5 !important;
+  background-color: #578635 !important;
 }
 
 .project-area .owl-prev {
@@ -1351,7 +1351,7 @@ Project Area Style
 }
 
 .project-area .owl-prev i {
-  background-color: #190f3c;
+  background-color: #578635;
   color: #ffffff;
   width: 40px;
   height: 40px;
@@ -1364,7 +1364,7 @@ Project Area Style
 }
 
 .project-area .owl-prev i:hover {
-  background-color: #04b8e5 !important;
+  background-color: #578635 !important;
 }
 
 .project-area:hover .owl-prev {
@@ -1399,7 +1399,7 @@ Project Area Style
 }
 
 .single-project .project-content {
-  background-color: #190f3c;
+  background-color: #578635;
   position: relative;
   padding: 30px;
   border-radius: 30px;
@@ -1414,11 +1414,11 @@ Project Area Style
 }
 
 .single-project .project-content h3:hover a {
-  color: #04b8e5;
+  color: #578635;
 }
 
 .single-project .project-content span {
-  color: #04b8e5;
+  color: #578635;
 }
 
 .single-project .project-content i {
@@ -1426,7 +1426,7 @@ Project Area Style
   top: 50%;
   right: 30px;
   background-color: #ffffff;
-  color: #232350;
+  color: #578635;
   width: 30px;
   height: 30px;
   line-height: 31px;
@@ -1440,7 +1440,7 @@ Project Area Style
 }
 
 .single-project .project-content i:hover {
-  background-color: #04b8e5;
+  background-color: #578635;
   color: #ffffff;
 }
 
@@ -1471,7 +1471,7 @@ Product Area Style
 }
 
 .single-product .product-content h3:hover a {
-  color: #04b8e5;
+  color: #578635;
 }
 
 .single-product .product-content ul li {
@@ -1479,11 +1479,11 @@ Product Area Style
   padding: 0 10px;
   font-weight: 600;
   font-size: 16px;
-  color: #04b8e5;
+  color: #578635;
 }
 
 .single-product .product-content ul li del {
-  color: #232350;
+  color: #243815;
   font-weight: 500;
 }
 
@@ -1528,7 +1528,7 @@ Appointment Area Style
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #232350;
+  background-color: #578635;
   opacity: 0.9;
 }
 
@@ -1565,7 +1565,7 @@ Appointment Area Style
   right: 20px;
   line-height: 1;
   font-size: 18px;
-  color: #04b8e5;
+  color: #578635;
 }
 
 .appointment-here-form .form-group .form-control {
@@ -1618,7 +1618,7 @@ Appointment Area Style
 .appointment-here-form .nice-select::after {
   height: 8px;
   width: 8px;
-  border-color: #04b8e5;
+  border-color: #578635;
   right: 23px;
 }
 
@@ -1628,7 +1628,7 @@ Appointment Area Style
 }
 
 .appointment-here-form .nice-select .list {
-  background-color: #04b8e5;
+  background-color: #578635;
 }
 
 .table-condensed {
@@ -1646,7 +1646,7 @@ Appointment Area Style
 }
 
 .table-condensed .prev:hover {
-  background-color: #04b8e5;
+  background-color:#578635;
   color: #ffffff;
 }
 
@@ -1659,7 +1659,7 @@ Appointment Area Style
 }
 
 .table-condensed .next:hover {
-  background-color: #04b8e5;
+  background-color: #578635;
   color: #ffffff;
 }
 
@@ -1673,7 +1673,7 @@ Appointment Area Style
 }
 
 .table-condensed .day:hover {
-  background-color: #04b8e5;
+  background-color: #578635;
   color: #ffffff;
 }
 
@@ -1702,8 +1702,8 @@ Blog Area Style
 
 .single-blog .blog-content ul li {
   display: inline-block;
-  color: #78a9e3;
-  border-right: 1px solid #78a9e3;
+  color: #578635;
+  border-right: 1px solid #578635;
   line-height: 1;
   padding: 0 10px;
   -webkit-transition: all 0.5s;
@@ -1720,11 +1720,11 @@ Blog Area Style
 }
 
 .single-blog .blog-content ul li a {
-  color: #78a9e3;
+  color: #578635;
 }
 
 .single-blog .blog-content ul li a:hover {
-  color: #190f3c;
+  color: #2c461a;
 }
 
 .single-blog .blog-content h3 {
@@ -1747,15 +1747,15 @@ Blog Area Style
 }
 
 .single-blog:hover .blog-content a h3 {
-  color: #04b8e5;
+  color: #578635;
 }
 
 .single-blog:hover .blog-content .read-more {
-  color: #04b8e5;
+  color: #578635;
 }
 
 .single-blog:hover .blog-content .read-more i {
-  color: #04b8e5;
+  color: #578635;
 }
 
 /*
@@ -1778,7 +1778,7 @@ Footer Top Area Style
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #190f3c;
+  background-color:#2c6602;
   opacity: 0.9;
   z-index: -1;
 }
@@ -1839,7 +1839,7 @@ Footer Top Area Style
   display: inline-block;
   margin-right: 2px;
   font-size: 18px;
-  color: #04b8e5;
+  color: #ebde2a;
   position: relative;
   top: 3px;
 }
@@ -1866,14 +1866,14 @@ Footer Top Area Style
   width: 30px;
   height: 30px;
   line-height: 34px;
-  background-color: #04b8e5;
+  background-color: #fff126;
   border-radius: 4px;
   text-align: center;
   border-radius: 50%;
 }
 
 .single-widget .social-area ul li a i {
-  color: #232350;
+  color: #333006;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   margin-right: 0;
@@ -1882,13 +1882,13 @@ Footer Top Area Style
 }
 
 .single-widget .social-area ul li a:hover {
-  border-color: #190f3c;
+  border-color: #333006;
   -webkit-transform: translateX(-2px);
   transform: translateX(-2px);
 }
 
 .single-widget .social-area ul li a:hover i {
-  color: #ffffff;
+  color: #0f3306;
 }
 
 .single-widget.contact ul li {
@@ -1905,7 +1905,7 @@ Footer Top Area Style
   position: absolute;
   top: 4px;
   left: 0;
-  color: #04b8e5;
+  color: #fff126;
   font-size: 20px;
 }
 
@@ -1918,7 +1918,7 @@ Footer Top Area Style
   position: absolute;
   left: 0;
   top: 4px;
-  color: #04b8e5;
+  color: #fff126;
   font-size: 20px;
 }
 
@@ -1931,7 +1931,7 @@ Footer Top Area Style
 Footer Bottom Area Style
 ======================================================*/
 .footer-bottom-area {
-  background-color: #05224c;
+  background-color: #173600;
   padding: 20px 0;
 }
 
@@ -2371,7 +2371,7 @@ About Area Two Style
 }
 
 .about-area-two .about-content-two span {
-  color: #04b8e5;
+  color: #578635;
   display: block;
   margin-bottom: 8px;
   font-weight: 600;
@@ -2406,7 +2406,7 @@ About Area Two Style
   cursor: pointer;
   border-radius: 4px;
   z-index: 1;
-  color: #232350;
+  color: #2d461c;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
@@ -2418,7 +2418,7 @@ About Area Two Style
   right: 0;
   width: 0;
   height: 100%;
-  background-color: #04b8e5;
+  background-color: #578635;
   z-index: -1;
   border-radius: 4px;
   -webkit-transition: all 0.5s;
@@ -2430,7 +2430,7 @@ About Area Two Style
 }
 
 .about-area-two .about-content-two ul li i {
-  color: #232350;
+  color: #283d19;
   position: absolute;
   top: 10px;
   left: 20px;
@@ -2461,7 +2461,7 @@ About Area Two Style
 }
 
 .about-area-two .about-img-two .block-p {
-  background-color: #190f3c;
+  background-color: #273b18;
   padding: 20px;
   width: 400px;
   position: absolute;
@@ -3444,7 +3444,7 @@ Page Title Area Style
   width: 100%;
   height: 100%;
   opacity: 0.9;
-  background-color: #232350;
+  background-color: #024e10;
   z-index: -1;
 }
 
@@ -3494,7 +3494,7 @@ Page Title Area Style
   position: absolute;
   top: 10px;
   right: -7px;
-  background-color: #04b8e5;
+  background-color: #163b00;
   width: 10px;
   height: 10px;
   -webkit-clip-path: polygon(
@@ -3526,11 +3526,11 @@ Page Title Area Style
 }
 
 .page-title-area .page-title-content ul li a:hover {
-  color: #04b8e5;
+  color: #e50462;
 }
 
 .page-title-area .page-title-content ul .active {
-  color: #04b8e5;
+  color: #c8fccb;
 }
 
 /*
