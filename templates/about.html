@@ -1,91 +1,87 @@
-{% extends 'base.html'%}
-{% load static %}
+{% extends 'base.html'%} {% load static %} {% block title %}
+<!-- Title -->
+<title>CoviArmour | About</title>
+{% endblock %} {% block body %}
 
-{% block title %}
-    <!-- Title -->
-    <title>CoviArmour | About</title>
-{% endblock %}
+<!-- Start Page Title Area -->
+<div
+  class="page-title-area bg-1"
+  style="
+    max-height: 10rem;
+    padding-top: 180px !important;
+    padding-bottom: 80px !important;
+  "
+>
+  <div class="container">
+    <div class="page-title-content" style="margin-top: -2.3rem">
+      <h2>CoviArmour</h2>
+      <ul>
+        <li>
+          <a href="index.html"> Home </a>
+        </li>
 
+        <li class="active">CoviArmour</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- End Page Title Area -->
 
-{% block body %}
+<!--Start Prevent Area Area-->
+<section class="prevent-area pt-100 pb-70">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <div class="prevent-content">
+          <h2>What is CoviArmour?</h2>
+          <p>
+            An Anit-Microbial Self Disinfecting Coating Which Provides
+            Protection For 90 Days Disinfection of frequently touched surfaces
+            will reduce the probability of virus transmission to almost zero
+          </p>
 
-    <!-- Start Page Title Area -->
-    <div class="page-title-area bg-1" style="max-height: 10rem;padding-top: 180px !important; padding-bottom: 80px !important" >
-      <div class="container">
-        <div class="page-title-content" style="margin-top: -2.3rem;">
-          <h2>CoviArmour</h2>
           <ul>
             <li>
-              <a href="index.html">
-                Home
-              </a>
+              <h3>ANTIMICROBIAL COATING</h3>
+              <p>
+                Polymer coating provides a protective layer that encapsulates
+                doped and semiconductor alloy nanoparticles for controlled and
+                sustained release. This ensures long term antimicrobial
+                activity.
+              </p>
             </li>
-
-            <li class="active">CoviArmour</li>
+            <li>
+              <h3>HIGHLY ADHESIVE SURFACE COATING</h3>
+              <p>
+                The high-zeta potential of the nanoparticles (>80mV) along with
+                the steric hindrance of the long chain silane bonded polymers
+                generates highly stable dispersion which ensures very strong
+                adhesive and uniform coating on surfaces. This also leads to
+                charge repulsion with the microbes leading to their prolonged
+                antimicrobial activities.
+              </p>
+            </li>
+            <li>
+              <h3>ANTI CORROSIVE AND NON SACRIFICIAL</h3>
+              <p>Long term protection of metals against corrosion</p>
+            </li>
           </ul>
         </div>
       </div>
-    </div>
-    <!-- End Page Title Area -->
-
-    <!--Start Prevent Area Area-->
-    <section class="prevent-area pt-100 pb-70">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-6">
-            <div class="prevent-content">
-              <h2>What is CoviArmour?</h2>
-              <p>
-                An Anit-Microbial Self Disinfecting Coating Which Provides
-                Protection For 90 Days Disinfection of frequently touched
-                surfaces will reduce the probability of virus transmission to
-                almost zero
-              </p>
-
-              <ul>
-                <li>
-                  <h3>ANTIMICROBIAL COATING</h3>
-                  <p>
-                    Polymer coating provides a protective layer that
-                    encapsulates doped and semiconductor alloy nanoparticles for
-                    controlled and sustained release. This ensures long term
-                    antimicrobial activity.
-                  </p>
-                </li>
-                <li>
-                  <h3>HIGHLY ADHESIVE SURFACE COATING</h3>
-                  <p>
-                    The high-zeta potential of the nanoparticles (>80mV) along
-                    with the steric hindrance of the long chain silane bonded
-                    polymers generates highly stable dispersion which ensures
-                    very strong adhesive and uniform coating on surfaces. This
-                    also leads to charge repulsion with the microbes leading to
-                    their prolonged antimicrobial activities.
-                  </p>
-                </li>
-                <li>
-                  <h3>ANTI CORROSIVE AND NON SACRIFICIAL</h3>
-                  <p>
-                    Long term protection of metals against corrosion
-                  </p>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="prevent-img">
-              <img src="{% static 'img/prevent-img.jpg' %}" alt="Image" />
-              <div class="prevent-child">
-                <img src="{% static 'img/prevent-child.jpg' %}" alt="Image" />
-              </div>
-            </div>
+      <div class="col-lg-6">
+        <div class="prevent-img">
+          <img src="{% static 'img/prevent-img.jpg' %}" alt="Image" />
+          <div class="prevent-child">
+            <img src="{% static 'img/prevent-child.jpg' %}" alt="Image" />
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <!-- End Prevent Area -->
-    <!-- Start About Area Area
+<!-- End Prevent Area -->
+<!-- Start About Area Area
     <section class="about-area pt-100 pb-100">
       <div class="container">
         <div class="row align-items-center">
@@ -138,150 +134,144 @@
     </section>
    End About Area -->
 
-    <!-- Start About Area two -->
-    <section class="about-area-two bg-color pt-100 pb-100">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-6">
-            <div class="about-img-two">
-              <img src="{% static 'img/about-img-two.jpg' %}" alt="Image" />
+<!-- Start About Area two -->
+<section class="about-area-two bg-color pt-100 pb-100">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <div class="about-img-two">
+          <img src="{% static 'img/about-img-two.jpg' %}" alt="Image" />
 
-              <p class="block-p page-mb">
-                A Revolutionary Self-disinfecting Antimicrobial Coating
-              </p>
-            </div>
+          <p class="block-p page-mb">
+            A Revolutionary Self-disinfecting Antimicrobial Coating
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="about-content-two">
+          <h2>CoviArmour | Protect and Prevent</h2>
+          <p>
+            CoviArmour is a proprietary disinfectant formulation that forms a
+            long-lasting anti-microbial coating on surfaces. The formula is
+            composed of highly potent biocide agents that are encapsulated in
+            cationic polymers for controlled, long term release. Additionally,
+            it is doped with antimicrobial semiconductor nanoparticles which are
+            enclosed in the micelle structure. The formulation has a
+            multi-functional anti-microbial mechanism involving killing of
+            microbes through both release of biocidal agents and contact
+            inhibition. The antimicrobial disinfectant demonstrates logarithmic
+            reduction in the viable microbial count and has long term efficacy.
+          </p>
+
+          <ul>
+            <li>
+              <i class="flaticon-checked-1"></i>
+              Easy To Apply
+            </li>
+            <li>
+              <i class="flaticon-checked-1"></i>
+              Upto 90 Days Protection
+            </li>
+            <li>
+              <i class="flaticon-checked-1"></i>
+              Afforable pricing
+            </li>
+            <li>
+              <i class="flaticon-checked-1"></i>
+              Wipe or Spray
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End About Area two -->
+<!-- Start Products Area -->
+<br />
+<br />
+<br />
+<section class="products-area pb-70">
+  <div class="container">
+    <div class="section-title">
+      <h2>Benifits of CoviArmour</h2>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-4 col-sm-6">
+        <div class="single-product">
+          <div class="product-img">
+            <img src="{% static 'img/non-toxic.jpg' %}" alt="Image" /
+            class="benifits-img">
           </div>
-
-          <div class="col-lg-6">
-            <div class="about-content-two">
-              <h2>CoviArmour | Protect and Prevent</h2>
-              <p>
-                CoviArmour is a proprietary disinfectant formulation that forms
-                a long-lasting anti-microbial coating on surfaces. The formula
-                is composed of highly potent biocide agents that are
-                encapsulated in cationic polymers for controlled, long term
-                release. Additionally, it is doped with antimicrobial
-                semiconductor nanoparticles which are enclosed in the micelle
-                structure. The formulation has a multi-functional anti-microbial
-                mechanism involving killing of microbes through both release of
-                biocidal agents and contact inhibition. The antimicrobial
-                disinfectant demonstrates logarithmic reduction in the viable
-                microbial count and has long term efficacy.
-              </p>
-
-              <ul>
-                <li>
-                  <i class="flaticon-checked-1"></i>
-                  Easy To Apply
-                </li>
-                <li>
-                  <i class="flaticon-checked-1"></i>
-                  Upto 90 Days Protection
-                </li>
-                <li>
-                  <i class="flaticon-checked-1"></i>
-                  Afforable pricing
-                </li>
-                <li>
-                  <i class="flaticon-checked-1"></i>
-                  Wipe or Spray
-                </li>
-              </ul>
-            </div>
+          <div class="product-content">
+            <h3>
+              <a href="cart.html"> Non-Toxic | Environment Friendly </a>
+            </h3>
+            <ul>
+              <li>Active against SARS and InUuenza A</li>
+            </ul>
           </div>
         </div>
       </div>
-    </section>
-    <!-- End About Area two -->
-    <!-- Start Products Area -->
-    <br />
-    <br />
-    <br />
-    <section class="products-area pb-70">
-      <div class="container">
-        <div class="section-title">
-          <h2>Benifits of CoviArmour</h2>
-        </div>
 
-        <div class="row">
-          <div class="col-lg-4 col-sm-6">
-            <div class="single-product">
-              <div class="product-img">
-                <img src="{% static 'img/non-toxic.jpg' %}" alt="Image" /
-                class="benifits-img">
-              </div>
-              <div class="product-content">
-                <h3>
-                  <a href="cart.html">
-                    Non-Toxic | Environment Friendly
-                  </a>
-                </h3>
-                <ul>
-                  <li>Active against SARS and InUuenza A</li>
-                </ul>
-              </div>
-            </div>
+      <div class="col-lg-4 col-sm-6">
+        <div class="single-product">
+          <div class="product-img">
+            <img
+              src="{% static 'img/Picture2.png' %}"
+              alt="Image"
+              class="benifits-img1"
+            />
           </div>
-
-          <div class="col-lg-4 col-sm-6">
-            <div class="single-product">
-              <div class="product-img">
-                <img
-                  src="{% static 'img/Picture2.png' %}"
-                  alt="Image"
-                  class="benifits-img1"
-                />
-              </div>
-              <div class="product-content">
-                <h3>
-                  <a href="cart.html"> 90 Days Protection</a>
-                </h3>
-                <ul>
-                  <li>
-                    With one coat surfaces will remain protected 24/7 for 90
-                    Days
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-sm-6 offset-sm-3 offset-lg-0">
-            <div class="single-product">
-              <div class="product-img">
-                <img
-                  src="{% static 'img/product/2.jpg' %}"
-                  alt="Image"
-                  class="benifits-img3"
-                />
-              </div>
-              <div class="product-content">
-                <h3>
-                  <a href="cart.html">
-                    Anti Viral
-                  </a>
-                </h3>
-                <ul>
-                  <li>
-                    Safe anti-bacterial function - presence can be verified
-                    using marker
-                  </li>
-                </ul>
-              </div>
-            </div>
+          <div class="product-content">
+            <h3>
+              <a href="cart.html"> 90 Days Protection</a>
+            </h3>
+            <ul>
+              <li>
+                With one coat surfaces will remain protected 24/7 for 90 Days
+              </li>
+            </ul>
           </div>
         </div>
       </div>
-    </section>
-    <!-- End Products Area -->
-    <br />
 
-    <img
-      src="{% static 'compare.PNG' %}"
-      style="display: block; margin-left: auto; margin-right: auto; width: 55%;"
-    />
-    <br />
-    <br />
-    <br />
+      <div class="col-lg-4 col-sm-6 offset-sm-3 offset-lg-0">
+        <div class="single-product">
+          <div class="product-img">
+            <img
+              src="{% static 'img/product/2.jpg' %}"
+              alt="Image"
+              class="benifits-img3"
+            />
+          </div>
+          <div class="product-content">
+            <h3>
+              <a href="cart.html"> Anti Viral </a>
+            </h3>
+            <ul>
+              <li>
+                Safe anti-bacterial function - presence can be verified using
+                marker
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Products Area -->
+<br />
+
+<img
+  src="{% static 'compare.PNG' %}"
+  style="display: block; margin-left: auto; margin-right: auto; width: 86%"
+/>
+<br />
+<br />
+<br />
 
 {% endblock %}

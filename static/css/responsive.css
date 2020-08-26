@@ -1,13 +1,13 @@
 /* Max width 767px */
 .mean-bar {
-  background-color: #1c4200;
+  background-color: #2b6600;
   -webkit-box-shadow: 0px 20px 20px 20px rgba(0, 0, 0, 0.05);
   box-shadow: 0px 20px 20px 20px rgba(0, 0, 0, 0.05);
   height: 70px;
 }
 @media only screen and (max-width: 767px) {
   .mean-container .mean-bar {
-    background-color: #1c4200;
+    background-color: #2b6600;
     -webkit-box-shadow: 0px 20px 20px 20px rgba(0, 0, 0, 0.05);
     box-shadow: 0px 20px 20px 20px rgba(0, 0, 0, 0.05);
     height: 70px;
@@ -887,16 +887,16 @@
 /* Min width 768px to Max width 991px */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .mean-container .mean-bar {
-    background-color: #1c4200;
+    background-color: #2b6600;
     -webkit-box-shadow: 0px 20px 20px 20px rgba(0, 0, 0, 0.05);
     box-shadow: 0px 20px 20px 20px rgba(0, 0, 0, 0.05);
     height: 70px;
   }
   .mobile-nav.mean-container .mean-nav ul li a:hover {
-    color: #368002;
+    color: #2b6600;
   }
   .mobile-nav.mean-container .mean-nav ul li a.active {
-    color: #368002;
+    color: #2b6600;
   }
   .ptb-100 {
     padding-top: 50px;
@@ -1362,16 +1362,16 @@
 /* Only Mobil Menu Max width 991px */
 @media only screen and (max-width: 991px) {
   .mean-container .mean-bar {
-    background-color: #1c4200;
+    background-color: #2b6600;
     -webkit-box-shadow: 0px 20px 20px 20px rgba(0, 0, 0, 0.05);
     box-shadow: 0px 20px 20px 20px rgba(0, 0, 0, 0.05);
     height: 70px;
   }
   .mobile-nav.mean-container .mean-nav ul li a:hover {
-    color: #368002;
+    color: #2b6600;
   }
   .mobile-nav.mean-container .mean-nav ul li a.active {
-    color: #368002;
+    color: #2b6600;
   }
   .mean-container a.meanmenu-reveal {
     padding: 24px 15px 0 0;
