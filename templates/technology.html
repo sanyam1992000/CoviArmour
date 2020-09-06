@@ -7,7 +7,7 @@
 {% endblock %}
 
 {% block static %}
-
+   <link rel="stylesheet" href="{% static 'css/style.css' %}" />
     <link rel="stylesheet" href="{% static 'css/temp.css" />
     <link
       rel="stylesheet"
@@ -25,7 +25,7 @@
     <div class="page-title-area bg-1" style="max-height: 10rem;padding-top: 180px !important; padding-bottom: 80px !important">
       <div class="container">
         <div class="page-title-content" style="margin-top: -2.3rem;">
-          <h2>Technolskfbkjcbndsklcnldskcsogy</h2>
+          <h2>Technology</h2>
           <ul>
             <li>
               <a href="index.html">
@@ -33,7 +33,7 @@
               </a>
             </li>
 
-            <li class="active">Technfesmbcferkjcbfelfcnewlfology</li>
+            <li class="active">Technology</li>
           </ul>
         </div>
       </div>
@@ -77,6 +77,57 @@
       </div>
     </section>
     <!-- End Prevent Area -->
+    <!--Start Technology Area-->
+    <section class="Technology-area">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12 ptb-100">
+            <div class="Technology-content">
+              <h2 style="text-align: center;">
+                Technology
+              </h2>
+              <br />
+              <center>
+              <div> <img src="{% static 'img/Technology/First.png' %}" /></div>
+          </center>
+              <br />
+              <p>
+               CoviArmour is a proprietary disinfectant formulation that on surfaces forms a long-lasting anti-microbial coating . This nanocoating provides a protective layer that encapsulates doped and
+               semiconductor alloy nanoparticles for controlled and sustained release. This
+               ensures long term antimicrobial activity. The high-zeta potential of the nanoparticles (>80mV) along with the steric
+				hindrance of the long chain silane bonded polymers generates highly stable
+				dispersion which ensures very strong adhesive and uniform coating on surfaces.
+				 This also leads to charge repulsion with the microbes leading to their prolonged
+				antimicrobial activities.
+				 Our formulation
+				prevents adhesion of the
+				microorganisms due to repulsive
+				forces created due to unlike charges
+				between surface and microbes. The
+				high charge further disrupts the
+				membrane potential across micorbes.
+				 The antimicrobial
+				nanoparticles embedded within our
+				polymer coating are released
+				gradually over a long period of time
+				causing disruption of osmotic balance
+				and photocatalysis.
+				 The biocidal agents
+				within our coating formulation
+				generate high surface tension and
+				catalyze oxidative damage of
+				proteins, DNA enzymes that kill
+				microbes upon contact with the
+				disinfectant.
+       
+                    </p>
+                  </div>
+               </div>
+
+              
+            </div>
+       </div>
+    </section>
     <!-- Start About Area Area 
     <section class="about-area pt-100 pb-100">
       <div class="container">
@@ -144,7 +195,7 @@
         <div class="row">
           <div class="col-lg-4 col-sm-6">
             <div class="single-services" style="height: 490px;">
-              <img src="{% static 'img/services/1.jpg' %}" alt="Image" />
+              <img src="{% static 'img/services/first.jpg' %}" alt="Image" />
 
               <div class="services-content">
                 <h3>Non-Toxic</h3>
@@ -161,7 +212,7 @@
 
           <div class="col-lg-4 col-sm-6">
             <div class="single-services" style="height: 490px;">
-              <img src="{% static 'img/services/2.jpg' %}" alt="Image" />
+              <img src="{% static 'img/services/second.jpg' %}" alt="Image" />
 
               <div class="services-content">
                 <h3>Upto 90-Day Protection</h3>
@@ -178,7 +229,7 @@
 
           <div class="col-lg-4 col-sm-6">
             <div class="single-services" style="height: 490px;">
-              <img src="{% static 'img/services/3.jpg' %}" alt="Image" />
+              <img src="{% static 'img/services/Third.jpg' %}" alt="Image" />
 
               <div class="services-content">
                 <h3>Lethal Multi Antimicrobial Technologies</h3>
@@ -195,7 +246,7 @@
 
           <div class="col-lg-4 col-sm-6">
             <div class="single-services" style="height: 490px;">
-              <img src="{% static 'img/services/4.jpg' %}" alt="Image" />
+              <img src="{% static 'img/services/fourth.png' %}" alt="Image" />
 
               <div class="services-content">
                 <h3>High adhesion Covalent Bonding</h3>
@@ -212,7 +263,7 @@
 
           <div class="col-lg-4 col-sm-6">
             <div class="single-services" style="height: 490px;">
-              <img src="{% static 'img/services/5.jpg' %}" alt="Image" />
+              <img src="{% static 'img/services/Fifth.jpg' %}" alt="Image" />
 
               <div class="services-content">
                 <h3>Magnetic Attraction</h3>
@@ -230,7 +281,7 @@
 
           <div class="col-lg-4 col-sm-6">
             <div class="single-services" style="height: 490px;">
-              <img src="{% static 'img/services/6.jpg' %}" alt="Image" />
+              <img src="{% static 'img/services/Sixth.jpg' %}" alt="Image" />
 
               <div class="services-content">
                 <h3>Green Technology</h3>
@@ -240,7 +291,7 @@
                   potentially dangerous chemicals to be effective.
                 </p>
 
-                <span class="flaticon-toilet"></span>
+               <span class="flaticon-toilet"></span>
               </div>
             </div>
           </div>
@@ -274,19 +325,22 @@
 
                 <a href="">
                   <h3>
-                    Applying CoviArmour
+                      Sanitization
                   </h3>
                 </a>
                 <p>
-                  Applying CoviArmour through the air duct to ensure equal
-                  coverage on all surfaces.
+                 Our Team will Sanitize whole room first.
+                 <!--- Applying CoviArmour through the air duct to ensure equal
+                  coverage on all surfaces.--->
                 </p>
 
                 <a href="" class="read-more">
                   Read More
                   <i class="bx bx-plus"></i>
                 </a>
+               
               </div>
+              <span>01</span>
             </div>
           </div>
 
@@ -304,10 +358,11 @@
                 </ul>
 
                 <a href="blog-details.html">
-                  <h3>Disinfection</h3>
+                  <h3><!---Disinfection--->Applying CoviArmour</h3>
                 </a>
                 <p>
-                  Disinfection using our proprietary coating technology.
+                	We use Latest ULV fogger Machines for the coating of CoviArmour Disinfectant. It penetrates deeply on surface and forms equal layer.
+                <!---Disinfection using our proprietary coating technology.--->
                 </p>
 
                 <a href="blog-details.html" class="read-more">
@@ -315,13 +370,14 @@
                   <i class="bx bx-plus"></i>
                 </a>
               </div>
+              <span>02</span>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0">
             <div class="single-blog">
               <a href="blog-details.html">
-                <img src="{% static 'img/blog/3.jpg' %}" alt="Image" />
+                <img src="{% static 'img/blog/third.jpg' %}" alt="Image" />
               </a>
 
               <div class="blog-content">
@@ -332,12 +388,13 @@
                 </ul>
 
                 <a href="blog-details.html">
-                  <h3>Post-coating ATP measurement after surface drying.</h3>
+                  <h3><!---Post-coating ATP measurement after surface drying.--->Wiping the surface</h3>
                 </a>
                 <p>
-                  To measure contamination level on a surface, we use ATP/Swab
+                  Using cloth, we wipe the the surface so that chemical is absorbed and layer is formedd equally on the surface.
+                  <!---To measure contamination level on a surface, we use ATP/Swab
                   technique. To measure the level of contamination by detecting
-                  the presence of Adenosine Tri Phosphate
+                  the presence of Adenosine Tri Phosphate--->
                 </p>
 
                 <a href="blog-details.html" class="read-more">
@@ -345,8 +402,70 @@
                   <i class="bx bx-plus"></i>
                 </a>
               </div>
+              <span>03</span>
             </div>
           </div>
+          
+          <div class="col-lg-4 col-md-6 offset-md-3 offset-lg-1">
+            <div class="single-blog">
+              <a href="blog-details.html">
+                <img src="{% static 'img/blog/fourth.jpg' %}" alt="Image" />
+              </a>
+
+              <div class="blog-content">
+                <ul>
+                  <li>
+                    <a href="#">Step-4</a>
+                  </li>
+                </ul>
+
+                <a href="blog-details.html">
+                  <h3>Leaving the area idle</h3>
+                </a>
+                <p>
+                  Then we leave the area idle for 5-6 Hours for best results
+                  
+                </p>
+
+                <a href="blog-details.html" class="read-more">
+                  Read More
+                  <i class="bx bx-plus"></i>
+                </a>
+              </div>
+              <span>04</span>
+            </div>
+          </div>
+           
+           <div class="col-lg-4 col-md-6 offset-md-3 offset-lg-2">
+            <div class="single-blog">
+              <a href="blog-details.html">
+                <img src="{% static 'img/blog/fifth.jpg' %}" alt="Image" />
+              </a>
+
+              <div class="blog-content">
+                <ul>
+                  <li>
+                    <a href="#">Step-5</a>
+                  </li>
+                </ul>
+
+                <a href="blog-details.html">
+                  <h3>Post-coating ATP measurement after surface drying</h3>
+                </a>
+                <p>
+                  To measure contamination level on a surface, we use ATP/Swab technique. ATP/Swab is a globally used tool to measure the level of contamination by detecting the presence of Adenosine TriPhosphate.
+                  
+                </p>
+
+                <a href="blog-details.html" class="read-more">
+                  Read More
+                  <i class="bx bx-plus"></i>
+                </a>
+              </div>
+              <span>05</span>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>

@@ -1691,6 +1691,33 @@ Blog Area Style
   width: 100%;
 }
 
+.single-blog span {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  background-color: #76975f;
+  border-radius: 50%;
+  color: #ffffff;
+  font-weight: 600;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+
+.single-blog:hover span {
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  border-radius: 0 0 0 50px;
+  font-size: 20px;
+  line-height: 60px;
+}
+
 .single-blog .blog-content {
   margin-top: 25px;
 }
@@ -1757,6 +1784,7 @@ Blog Area Style
 .single-blog:hover .blog-content .read-more i {
   color: #578635;
 }
+
 
 /*
 Footer Top Area Style
@@ -2467,6 +2495,36 @@ About Area Two Style
   position: absolute;
   bottom: 30px;
   left: -30px;
+  color: #ffffff;
+}
+
+/*
+Technology Area Style
+======================================================*/
+.Technology-area
+{
+
+  background-color:#f5f5f5;
+  overflow: hidden;
+}
+.Technology-content p {
+
+  color:#ffffff;
+}
+
+.Technology-content {
+  margin-top: -8px;
+  margin-bottom: -10px;
+  background-color: #190f3c;
+  margin-right: -10px;
+  padding: 50px;
+  z-index: 1;
+  position: relative;
+  
+}
+.Technology-content h2 {
+  font-size: 50px;
+  margin-bottom: 25px;
   color: #ffffff;
 }
 
