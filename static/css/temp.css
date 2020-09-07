@@ -5,7 +5,9 @@
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-
+.bg1 {
+  background-color: #7a3004;
+}
 /* Style the icon bar links */
 .icon-bar a {
   display: block;
