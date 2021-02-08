@@ -20,19 +20,6 @@
             </li>
           </ul>
         </div>
-
-        <!--            <div class="col-lg-6 col-sm-6">-->
-        <!--              <ul class="header-content-right">-->
-        <!--                <li>-->
-        <!--                  Opening Hour: 9:00 am - 9:00 pm-->
-        <!--                </li>-->
-        <!--                &lt;!&ndash;<li>-->
-        <!--                    <a href="sign-in.html">-->
-        <!--                      Sign In-->
-        <!--                    </a>-->
-        <!--                  </li>&ndash;&gt;-->
-        <!--              </ul>-->
-        <!--            </div>-->
       </div>
     </div>
   </div>
@@ -74,15 +61,6 @@
                   margin-bottom: 0.4rem;
                 "
               />
-              <img
-                src="{% static 'img/logo5.png' %} "
-                alt="Logo"
-                style="
-                  height: 80px !important;
-                  margin-top: 0.4rem;
-                  margin-bottom: 0.4rem;
-                "
-              />
             </a>
 
             <div class="collapse navbar-collapse mean-menu">
@@ -96,39 +74,6 @@
                 <li class="nav-item">
                   <a href="{% url 'core:about' %}" class="nav-link">HIL CoviArmour</a>
                 </li>
-
-                <!--                    <li class="nav-item">-->
-                <!--                      <a href="#" class="nav-link">-->
-                <!--                        Pages-->
-                <!--                        <i class="bx bx-chevron-right"></i>-->
-                <!--                      </a>-->
-
-                <!--                      <ul class="dropdown-menu">-->
-                <!--                        <li class="nav-item">-->
-                <!--                          <a href="about.html" class="nav-link">About</a>-->
-                <!--                        </li>-->
-
-                <!--                        <li class="nav-item">-->
-                <!--                          <a href="services.html" class="nav-link">Services</a>-->
-                <!--                        </li>-->
-
-                <!--                        <li class="nav-item">-->
-                <!--                          <a href="franchise.html" class="nav-link"-->
-                <!--                            >Franchise</a-->
-                <!--                          >-->
-                <!--                        </li>-->
-
-                <!--                        <li class="nav-item">-->
-                <!--                          <a href="certification.html" class="nav-link"-->
-                <!--                            >Certification</a-->
-                <!--                          >-->
-                <!--                        </li>-->
-
-                <!--                        <li class="nav-item">-->
-                <!--                          <a href="contact.html" class="nav-link">Contact</a>-->
-                <!--                        </li>-->
-                <!--                      </ul>-->
-                <!--                    </li>-->
 
                 <li class="nav-item">
                   <a href="{% url 'core:technology' %}" class="nav-link">
@@ -170,6 +115,18 @@
           </div>
            End Other Option -->
             </div>
+
+            <a class="navbar-brand" href="{% url 'core:home' %}">
+              <img
+                src="{% static 'img/logo5.png' %} "
+                alt="Logo"
+                style="
+                  height: 80px !important;
+                  margin-top: 0.4rem;
+                  margin-bottom: 0.4rem;
+                "
+              />
+            </a>
           </div>
         </nav>
       </div>
